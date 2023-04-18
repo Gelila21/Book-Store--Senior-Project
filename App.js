@@ -16,7 +16,51 @@ const App = () => {
     const [checkoutModalVisible, setCheckoutModalVisible] = useState(false);
 
 
-    
-  
+    useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((user) => {
+          if (user) {
+            setUser(user);
+          } else {
+            setUser(null);
+          }
+        });
+        return () => {
+          unsubscribe();
+        };
+      }, []);
 
-}
+
+      useEffect(() => {
+        if (user) {
+          const cartItemsRef = database.ref(`users/${user.uid}/cartItems`);
+          cartItemsRef.on('value', (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+              setCartItems(data);
+            } else {
+              setCartItems([]);
+            }
+          });
+          return () => {
+            cartItemsRef.off();
+          };
+        }
+    }, [user]);
+
+    const addToCart = (book) => {
+        console.log("Adding to cart:", book);
+        const existingItem = cartItems.find((item) => item.id === book.id);
+      
+        if (existingItem) {
+          const updatedCartItems = cartItems.map((item) =>
+            item.id === book.id ? { ...item, quantity: item.quantity + 1 } : item
+          );
+          setCartItems(updatedCartItems);
+          database.ref(`users/${user.uid}/cartItems`).set(updatedCartItems);
+        } else {
+          const newCartItems = [...cartItems, { ...book, quantity: 1 }];
+          setCartItems(newCartItems);
+          database.ref(`users/${user.uid}/cartItems`).set(newCartItems);
+        }
+      };
+
