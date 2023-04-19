@@ -139,3 +139,42 @@ const Navbar = ({
         ) : (
           <FaUserCircle size={30} />
         )}
+ {currentUser && (
+        <span className={`user-name${isMobile ? ' mobile-initials' : ''}`}>
+          {currentUser.displayName
+            ? currentUser.displayName.charAt(0).toUpperCase() + currentUser.displayName.slice(1)
+            : currentUser.email.charAt(0).toUpperCase() + currentUser.email.split("@")[0].slice(1)}
+        </span>
+      )}
+
+        {dropdownVisible && (
+          <ul className="dropdown-menu">
+            {currentUser ? (
+              <li>
+                <Link to="#" onClick={handleSignOut}>
+                  Logout
+                </Link>
+              </li>
+              ) : (
+                  <>
+              <li>
+                  <Link to="#" onClick={openSignInModal}>
+                  Sign In
+                  </Link>
+              </li>
+              <li>
+                  <Link to="#" onClick={openSignUpModal}>
+                  Sign Up
+                  </Link>
+              </li>
+                  </>
+            )}
+            </ul>
+            )}
+            </div>
+            <SignUpModal isOpen={signUpModalVisible} onRequestClose={closeSignUpModal} onUserSignUp={(updatedUser) => handleUserSignUp(updatedUser)}/>
+            <SignInModal isOpen={signInModalVisible} onRequestClose={closeSignInModal} onUserSignIn={handleUserSignIn} />
+            </nav>
+             ); 
+            };
+export default Navbar;
