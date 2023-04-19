@@ -13,11 +13,12 @@ import {
 import "./CheckoutModal.css";
 
 const useStyles = makeStyles((theme) => ({
-    modal: {
+      modal: {
       display: "flex",
       alignItems: "center",
       justifyContent: "center"
     },
+    
     form: {
         display: "flex",
         flexDirection: "column",
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: theme.shadows[5],
         outline: "none"
       },
+     
       buttonContainer: {
         display: "flex",
         justifyContent: "center",
