@@ -56,3 +56,12 @@ const Navbar = ({
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
+
+  const openSignUpModal = () => {
+    setSignUpModalVisible(true);
+    setDropdownVisible(false);
+  };
+
+  const closeSignUpModal = () => {
+    setSignUpModalVisible(false);
+  };
