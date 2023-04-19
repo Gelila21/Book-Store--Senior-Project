@@ -101,3 +101,31 @@ const Navbar = ({
         : currentUser.email.charAt(0).toUpperCase();
     }
   };
+  return (
+    <nav className="navbar">
+      <ul className="nav-items">
+        <li>
+          <Link to="/">
+          <div className="logo-container">
+            <img src={"./logo.png"} alt="Logo" className="logo" />
+          </div>
+          </Link>
+        </li>
+        <li>
+          <Link to="#" onClick={handleCartClick}>
+            <div className="logo-cart-container">
+              <AiOutlineShoppingCart size={30} />
+            </div>
+          </Link>
+        </li>
+
+      </ul>
+      <div className="search-bar">
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search books..."
+          onChange={handleSearchChange}
+        />
+        
+      </div>
