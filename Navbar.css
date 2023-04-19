@@ -92,3 +92,40 @@
   position: relative;
 }
 
+.search-bar {
+    width: 300px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    color: #666;
+  }
+  .logo-container {
+    padding: -5px;
+  }
+
+  
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .logo:hover {
+    background-color: none;
+  }
+  .logo-cart-container{
+    margin-top:4px;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  
