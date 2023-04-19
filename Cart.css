@@ -11,3 +11,16 @@
     overflow-y: scroll;
     z-index: 100;
   }
+
+  .cart-visible {
+    display: block;
+  }
+
+  .close-cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
