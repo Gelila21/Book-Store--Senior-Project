@@ -92,3 +92,7 @@
     transition: 0.3s;
   }
   
+  .modal-close:hover {
+    background-color: #da190b;
+  }
+  
