@@ -54,3 +54,25 @@
   .modal-close {
     margin-top: 10px;
   }
+
+
+.input-box {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .modal-form button {
+    width: 35%;
+    height: 30px;
+    background-color: #333;
+    border-radius: 5%;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+  }
+  
