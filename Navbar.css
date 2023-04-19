@@ -153,3 +153,18 @@
   .mobile-initials {
     display: none;
   }
+
+
+@media only screen and (max-width: 768px) {
+  
+    .logo-cart-container{
+      margin-left:-18px;
+      margin-top:4px;
+    }
+    .search-bar {
+      max-width: 250px;
+    }
+    .desktop-icon {
+      display: none;
+    }
+  
