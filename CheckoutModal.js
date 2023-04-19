@@ -18,3 +18,13 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       justifyContent: "center"
     },
+    form: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: theme.spacing(3),
+        maxWidth: 400,
+        backgroundColor: theme.palette.background.paper,
+        boxShadow: theme.shadows[5],
+        outline: "none"
+      },
