@@ -33,3 +33,16 @@
     border-bottom: 1px solid #ccc;
     padding-bottom: 1rem;
   }
+
+  .cart-item img {
+    max-width: 40px;
+    max-height: 60px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .cart-item-info {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 0.9rem;
+  }
