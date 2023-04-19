@@ -59,3 +59,12 @@ const booksData = [
     cover: '/assets/book8.jpg'
   }
 ];
+
+const BookCard = ({ book, addToCart, user, showSignInModal }) => {
+    const handleAddToCartClick = () => {
+      if (user) {
+        addToCart(book);
+      } else {
+        showSignInModal();
+      }
+    };
