@@ -78,4 +78,12 @@ const BookCard = ({ book, addToCart, user, showSignInModal }) => {
         </div>
       );
     };
-    
+
+    const Footer = () => {
+        return (
+          <footer className="footer">
+            <p>&copy; 2023 All rights reserved.</p>
+          </footer>
+        );
+      };
+      
