@@ -5,3 +5,15 @@
     justify-content: center;
     padding: 20px;
   }
+  .book-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    width: 200px;
+    margin: 16px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
