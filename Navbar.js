@@ -74,3 +74,23 @@ const Navbar = ({
   const closeSignInModal = () => {
     setSignInModalVisible(false);
   };
+
+  const handleSignOut = () => {
+    auth.signOut();
+    setDropdownVisible(false);
+  };
+
+  const handleUserSignUp = (updatedUser) => {
+    setCurrentUser(updatedUser);
+    setSignUpModalVisible(false);
+  };
+
+  const handleUserSignIn = (userData) => {
+    setCurrentUser(userData);
+    setSignInModalVisible(false);
+  };
+  const handleCartClick = () => {
+    if (onToggleCart) {
+      onToggleCart();
+    }
+  };
