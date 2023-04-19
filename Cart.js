@@ -25,3 +25,11 @@ const Cart = ({ cartItems, visible, onClose, onIncreaseQuantity, onDecreaseQuant
                 <p>{item.description}</p> {/* Add this line to display the description */}
                 <p>{item.price} x {item.quantity} = ${(parseFloat(item.price.slice(1)) * item.quantity).toFixed(2)}</p>
               </div>
+              <div className="cart-item-quantity">
+              <p>Quantity: {item.quantity}</p>
+              <button onClick={() => onIncreaseQuantity(item.id)}>+</button>
+              <button onClick={() => onDecreaseQuantity(item.id)}>-</button>
+            </div>
+          </div>
+        ))}
+      </div>
