@@ -68,3 +68,14 @@ const BookCard = ({ book, addToCart, user, showSignInModal }) => {
         showSignInModal();
       }
     };
+    return (
+        <div className="book-card">
+          <img src={book.cover} alt={book.title} width="100" height="150" />
+          <h3>{book.title}</h3>
+          <p>{book.author}</p>
+          <p className="price">{book.price}</p>
+          <button onClick={handleAddToCartClick}>Add to Cart</button>
+        </div>
+      );
+    };
+    
