@@ -94,3 +94,10 @@ const Navbar = ({
       onToggleCart();
     }
   };
+  const renderInitials = () => {
+    if (currentUser) {
+      return currentUser.displayName
+        ? currentUser.displayName.charAt(0).toUpperCase()
+        : currentUser.email.charAt(0).toUpperCase();
+    }
+  };
