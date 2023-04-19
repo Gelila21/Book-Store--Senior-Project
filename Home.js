@@ -86,4 +86,10 @@ const BookCard = ({ book, addToCart, user, showSignInModal }) => {
           </footer>
         );
       };
-      
+
+      const Home = ({ searchQuery, addToCart, user, showSignInModal }) => {
+        console.log("User in Home:", user);
+        const filteredBooks = booksData.filter((book) =>
+          book.title.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+            
