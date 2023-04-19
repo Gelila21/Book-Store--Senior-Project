@@ -24,3 +24,18 @@ const Navbar = ({
     const handleSearchInputChange = (e) => {
       setSearchQuery(e.target.value);
     };
+    const handleSearchChange = (e) => {
+        if (onSearchQueryChange) {
+          onSearchQueryChange(e.target.value);
+        }
+      };
+      
+      useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((user) => {
+          setCurrentUser(user);
+        });
+    
+        return () => {
+          unsubscribe();
+        };
+      }, []);
