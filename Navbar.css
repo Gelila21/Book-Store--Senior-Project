@@ -128,4 +128,19 @@
     display: none;
   }
   
-  
+
+  @media only screen and (min-width: 415px) {
+    .search-bar {
+      width: 350px;
+    }
+    .user-name {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+      margin-right: 0px !important;
+    }
+    .profile-icon {
+      margin-top: 13px;
+      margin-right: 5px;
+    }
+  }  
