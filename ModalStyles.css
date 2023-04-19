@@ -20,3 +20,16 @@
     bottom: 0;
     backdrop-filter: blur(5px);
   }
+
+  .modal-content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1001;
+    border-radius: 3%;
+  }
+  
