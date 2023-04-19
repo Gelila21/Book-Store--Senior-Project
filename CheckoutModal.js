@@ -28,3 +28,14 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: theme.shadows[5],
         outline: "none"
       },
+      buttonContainer: {
+        display: "flex",
+        justifyContent: "center",
+        marginTop: theme.spacing(2),
+        width: "100%",
+        alignItems: "center"
+      },
+      flexSpacer: {
+        flexGrow: 1
+      }
+    }));
