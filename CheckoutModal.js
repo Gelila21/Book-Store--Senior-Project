@@ -39,3 +39,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1
       }
     }));
+    Modal.setAppElement("#root");
+
+const CheckoutModal = ({ isOpen, onRequestClose }) => {
+  const classes = useStyles();
