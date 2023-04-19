@@ -65,3 +65,12 @@ const Navbar = ({
   const closeSignUpModal = () => {
     setSignUpModalVisible(false);
   };
+
+  const openSignInModal = () => {
+    setSignInModalVisible(true);
+    setDropdownVisible(false);
+  };
+
+  const closeSignInModal = () => {
+    setSignInModalVisible(false);
+  };
