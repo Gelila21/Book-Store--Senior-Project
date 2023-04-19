@@ -43,3 +43,87 @@ const useStyles = makeStyles((theme) => ({
 
 const CheckoutModal = ({ isOpen, onRequestClose }) => {
   const classes = useStyles();
+
+  return (
+    <Dialog
+      open={isOpen}
+      onClose={onRequestClose}
+      disableBackdropClick
+      disableEscapeKeyDown
+      aria-labelledby="checkout-modal-title"
+      className={classes.modal}
+    >
+      <DialogTitle id="checkout-modal-title">Checkout</DialogTitle>
+      <form className={classes.form}>
+        <DialogContent>
+          <TextField
+            label="Full Name"
+            type="text"
+            id="name"
+            name="name"
+            required
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Email"
+            type="email"
+            id="email"
+            name="email"
+            required
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Shipping Address"
+            type="text"
+            id="address"
+            name="address"
+            required
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="City"
+            type="text"
+            id="city"
+            name="city"
+            required
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="State"
+            type="text"
+            id="state"
+            name="state"
+            required
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="ZIP Code"
+            type="text"
+            id="zip"
+            name="zip"
+            required
+            fullWidth
+            margin="normal"
+          />
+        </DialogContent>
+        <DialogActions className={classes.buttonContainer}>
+          <div className={classes.flexSpacer} />
+          <Button onClick={onRequestClose} color="secondary" style={{ backgroundColor: '#333', color: '#fff' }}>
+            Close
+          </Button>
+          <Button type="submit" variant="contained" color="primary">
+            Pay with PayPal
+          </Button>
+        </DialogActions>
+      </form>
+    </Dialog>
+  );
+};
+
+export default CheckoutModal;
+
