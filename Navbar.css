@@ -36,3 +36,21 @@
     z-index: 1;
     display: none;
   }
+
+
+  .user-name {
+    display: inline-block;
+    padding: 0px 15px 5px 5px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid;
+    border-left: hidden !important;
+    border-color: #f1f1f1;
+    margin-right: 0px !important;
+    position: relative;
+    top: -10px; /* Adjust this value based on the profile icon's position */
+  }
+  
+  .profile-icon .dropdown-menu {
+    display: block;
+  }
