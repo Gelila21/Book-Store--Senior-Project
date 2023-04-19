@@ -87,3 +87,9 @@
 .cart-title{
     text-align: center;
 }
+
+.cart-nav{
+    height: 50px;
+    background-color: #333;
+    border:solid #333;
+}
