@@ -76,3 +76,8 @@
     transition: 0.3s;
   }
   
+
+  .modal-form button:hover {
+    background-color: #000000;
+  }
+  
