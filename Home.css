@@ -17,3 +17,17 @@
     margin: 16px;
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
+
+  .book-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .book-card img {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    max-width: 100%;
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+  }
