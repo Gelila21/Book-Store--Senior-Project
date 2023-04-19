@@ -129,3 +129,13 @@ const Navbar = ({
         />
         
       </div>
+
+      <div className="profile-icon" onClick={toggleDropdown}>
+        {currentUser ? (
+          <>
+            <FaUserCircle size={30} className={`desktop-icon${isMobile ? ' hidden' : ''}`} />
+            <span className={`mobile-initials${!isMobile ? ' hidden' : ''}`}>{renderInitials()}</span>
+          </>
+        ) : (
+          <FaUserCircle size={30} />
+        )}
