@@ -52,3 +52,7 @@ const Navbar = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
