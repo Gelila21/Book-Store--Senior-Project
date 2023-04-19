@@ -65,3 +65,18 @@
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
     margin-top: auto;
   }
+
+  .book-card button:hover {
+    background-color: #272727;;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
