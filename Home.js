@@ -92,4 +92,23 @@ const BookCard = ({ book, addToCart, user, showSignInModal }) => {
         const filteredBooks = booksData.filter((book) =>
           book.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
-            
+        return (
+            <div>
+              <h1>Books</h1>
+              <div className="book-container">
+              {filteredBooks.map((book) => (
+                <BookCard
+                  key={book.id}
+                  book={book}
+                  addToCart={addToCart}
+                  user={user}
+                  showSignInModal={showSignInModal} // Pass the showSignInModal function as a prop
+                />
+              ))}
+              </div>
+              <Footer />
+            </div>
+          );
+        };
+    
+        export default Home;
