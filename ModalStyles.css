@@ -46,3 +46,11 @@
     align-items: center;
     margin-bottom: 10px;
   }
+
+  .modal-form button {
+    margin-top: 15px;
+  }
+  
+  .modal-close {
+    margin-top: 10px;
+  }
