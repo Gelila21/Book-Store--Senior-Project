@@ -1,0 +1,21 @@
+[debug] [2023-04-19T23:05:25.834Z] ----------------------------------------------------------------------
+[debug] [2023-04-19T23:05:25.836Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-04-19T23:05:25.837Z] CLI Version:   11.24.1
+[debug] [2023-04-19T23:05:25.837Z] Platform:      darwin
+[debug] [2023-04-19T23:05:25.837Z] Node Version:  v18.4.0
+[debug] [2023-04-19T23:05:25.838Z] Time:          Wed Apr 19 2023 16:05:25 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-04-19T23:05:25.838Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-19T23:05:25.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-19T23:05:25.845Z] > authorizing via signed-in user (gelilachaka@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/gelilachaka/Documents/GitHub/Book-Store--Senior-Project
+
